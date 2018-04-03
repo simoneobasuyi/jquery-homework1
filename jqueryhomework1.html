@@ -22,11 +22,20 @@
     console.log( $("h2").text());
   }
   function swapedHeadlines () {
-  var firstswap = $("h1").text();
-  var secswap = $("h1").text();
-  $("h1").text(firstswap);
-  $("h2").text(secswap);
+    var firstswap = $("h1").text();
+    var secswap = $("h1").text();
+    $("h1").text(firstswap);
+    $("h2").text(secswap);
   }
+function noSubhed () {
+  $("h1").fadeOut();
+  $("h2").fadeOut();
+  }
+function undo () {
+  $("h1").show();
+  $("h1").show();
+}
+
 
 </script>
 

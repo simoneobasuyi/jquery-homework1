@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  .tech {
+    color: blue;
+  }
+  </style>
   <title>jQuery test page</title>
 </head>
 <body>
@@ -28,15 +33,19 @@
     $("h2").text(secswap);
   }
 function noSubhed () {
-  $("h1").fadeOut();
   $("h2").fadeOut();
+  $("h3").fadeOut();
   }
 function undo () {
   $("h1").show();
   $("h1").show();
 }
-
-
+function highlightByline () {
+  $('.byline').addClass("tech");
+  }
+  function unHighlightByline () {
+  $('.byline').removeClass("tech"); 
+  }
 </script>
 
 
